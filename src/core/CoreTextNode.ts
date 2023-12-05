@@ -80,6 +80,10 @@ export class CoreTextNode extends CoreNode implements ICoreTextNode {
           fontStyle: props.fontStyle,
           fontWeight: props.fontWeight,
           text: props.text,
+          lineHeight: props.lineHeight,
+          maxLines: props.maxLines,
+          maxLinesSuffix: props.maxLinesSuffix,
+          textOverflow: props.textOverflow,
         },
         undefined,
       );
@@ -268,6 +272,46 @@ export class CoreTextNode extends CoreNode implements ICoreTextNode {
   set letterSpacing(value: CoreTextNodeProps['letterSpacing']) {
     this.textRenderer.set.letterSpacing(this.trState, value);
     this.updateText();
+  }
+
+  get lineHeight(): CoreTextNodeProps['lineHeight'] {
+    return this.trState.props.lineHeight;
+  }
+
+  set lineHeight(value: CoreTextNodeProps['lineHeight']) {
+    if (this.textRenderer.set.lineHeight) {
+      this.textRenderer.set.lineHeight(this.trState, value);
+    }
+  }
+
+  get maxLines(): CoreTextNodeProps['maxLines'] {
+    return this.trState.props.maxLines;
+  }
+
+  set maxLines(value: CoreTextNodeProps['letterSpacing']) {
+    if (this.textRenderer.set.maxLines) {
+      this.textRenderer.set.maxLines(this.trState, value);
+    }
+  }
+
+  get maxLinesSuffix(): CoreTextNodeProps['maxLinesSuffix'] {
+    return this.trState.props.maxLinesSuffix;
+  }
+
+  set maxLinesSuffix(value: CoreTextNodeProps['maxLinesSuffix']) {
+    if (this.textRenderer.set.maxLinesSuffix) {
+      this.textRenderer.set.maxLinesSuffix(this.trState, value);
+    }
+  }
+
+  get textOverflow(): CoreTextNodeProps['textOverflow'] {
+    return this.trState.props.textOverflow;
+  }
+
+  set textOverflow(value: CoreTextNodeProps['textOverflow']) {
+    if (this.textRenderer.set.textOverflow) {
+      this.textRenderer.set.textOverflow(this.trState, value);
+    }
   }
 
   get debug(): CoreTextNodeProps['debug'] {
