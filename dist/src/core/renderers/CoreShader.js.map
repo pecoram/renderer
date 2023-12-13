@@ -1,0 +1,1 @@
+{"version":3,"file":"CoreShader.js","sourceRoot":"","sources":["../../../../src/core/renderers/CoreShader.ts"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;;;;;GAiBG;AAIH,MAAM,OAAgB,UAAU;IAC9B,yBAAyB;IACzB,MAAM,CAAC,YAAY,CAAC,KAA8B;QAChD,OAAO,KAAK,CAAC;IACf,CAAC;IAED,MAAM,CAAC,eAAe,CACpB,KAA8B;QAE9B,OAAO,EAAE,CAAC;IACZ,CAAC;CASF"}
