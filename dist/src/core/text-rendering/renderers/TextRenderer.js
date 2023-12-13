@@ -89,6 +89,12 @@ const trPropSetterDefaults = {
     textOverflow: (state, value) => {
         state.props.textOverflow = value;
     },
+    verticalAlign: (state, value) => {
+        state.props.verticalAlign = value;
+    },
+    textBaseline: (state, value) => {
+        state.props.textBaseline = value;
+    },
     debug: (state, value) => {
         state.props.debug = value;
     },

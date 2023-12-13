@@ -25,6 +25,11 @@ import type {
   TrFontFace,
   TrFontFaceDescriptors,
 } from '../font-face-types/TrFontFace.js';
+import type {
+  TextBaseline,
+  TextOverflow,
+  TextVerticalAlign,
+} from './LightningTextTextureRenderer.js';
 
 /**
  * Augmentable map of text renderer type IDs to text renderer types.
@@ -247,10 +252,12 @@ export interface TrProps extends TrFontProps {
    * @default 0
    */
   letterSpacing: number;
-  lineHeight?: number | null;
-  maxLines?: number | undefined;
-  maxLinesSuffix?: string | undefined;
-  textOverflow?: 'ellipsis' | 'clip' | undefined;
+  lineHeight: number;
+  maxLines: number;
+  maxLinesSuffix: string;
+  textOverflow: TextOverflow;
+  verticalAlign: TextVerticalAlign;
+  textBaseline: TextBaseline;
   zIndex: number;
   debug: Partial<TextRendererDebugProps>;
 }
@@ -331,6 +338,12 @@ const trPropSetterDefaults: TrPropSetters = {
   },
   textOverflow: (state, value) => {
     state.props.textOverflow = value;
+  },
+  verticalAlign: (state, value) => {
+    state.props.verticalAlign = value;
+  },
+  textBaseline: (state, value) => {
+    state.props.textBaseline = value;
   },
   debug: (state, value) => {
     state.props.debug = value;

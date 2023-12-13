@@ -67,6 +67,8 @@ export class MainOnlyTextNode extends MainOnlyNode {
             maxLines: props.maxLines,
             maxLinesSuffix: props.maxLinesSuffix,
             textOverflow: props.textOverflow,
+            verticalAlign: props.verticalAlign,
+            textBaseline: props.textBaseline,
             // These properties will get set appropriately in the base MainOnlyNode class
             parent: null,
             texture: null,
@@ -183,6 +185,22 @@ export class MainOnlyTextNode extends MainOnlyNode {
     set textOverflow(value) {
         if (value) {
             this.coreNode.textOverflow = value;
+        }
+    }
+    get verticalAlign() {
+        return this.coreNode.verticalAlign;
+    }
+    set verticalAlign(value) {
+        if (value) {
+            this.coreNode.verticalAlign = value;
+        }
+    }
+    get textBaseline() {
+        return this.coreNode.textBaseline;
+    }
+    set textBaseline(value) {
+        if (value) {
+            this.coreNode.textBaseline = value;
         }
     }
     get debug() {

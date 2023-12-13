@@ -172,10 +172,12 @@ export class RendererMain {
             scrollY: props.scrollY ?? 0,
             offsetY: props.offsetY ?? 0,
             letterSpacing: props.letterSpacing ?? 0,
-            lineHeight: props.lineHeight ?? null,
-            maxLines: props.maxLines ?? undefined,
-            maxLinesSuffix: props.maxLinesSuffix ?? undefined,
+            lineHeight: props.lineHeight ?? 0,
+            maxLines: props.maxLines ?? 0,
+            maxLinesSuffix: props.maxLinesSuffix ?? '',
             textOverflow: props.textOverflow ?? undefined,
+            verticalAlign: props.verticalAlign ?? 'middle',
+            tectBaseline: props.tectBaseline ?? 'alphabetic',
             debug: props.debug ?? {},
         };
         return this.driver.createTextNode(data);

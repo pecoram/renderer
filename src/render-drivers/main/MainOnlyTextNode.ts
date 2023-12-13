@@ -86,6 +86,8 @@ export class MainOnlyTextNode extends MainOnlyNode implements ITextNode {
         maxLines: props.maxLines,
         maxLinesSuffix: props.maxLinesSuffix,
         textOverflow: props.textOverflow,
+        verticalAlign: props.verticalAlign,
+        textBaseline: props.textBaseline,
         // These properties will get set appropriately in the base MainOnlyNode class
         parent: null,
         texture: null,
@@ -237,6 +239,24 @@ export class MainOnlyTextNode extends MainOnlyNode implements ITextNode {
   set textOverflow(value: ITextNode['textOverflow']) {
     if (value) {
       this.coreNode.textOverflow = value;
+    }
+  }
+  get verticalAlign(): ITextNode['verticalAlign'] {
+    return this.coreNode.verticalAlign;
+  }
+
+  set verticalAlign(value: ITextNode['verticalAlign']) {
+    if (value) {
+      this.coreNode.verticalAlign = value;
+    }
+  }
+  get textBaseline(): ITextNode['textBaseline'] {
+    return this.coreNode.textBaseline;
+  }
+
+  set textBaseline(value: ITextNode['textBaseline']) {
+    if (value) {
+      this.coreNode.textBaseline = value;
     }
   }
 

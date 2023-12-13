@@ -387,10 +387,12 @@ export class RendererMain {
       scrollY: props.scrollY ?? 0,
       offsetY: props.offsetY ?? 0,
       letterSpacing: props.letterSpacing ?? 0,
-      lineHeight: props.lineHeight ?? null,
-      maxLines: props.maxLines ?? undefined,
-      maxLinesSuffix: props.maxLinesSuffix ?? undefined,
-      textOverflow: props.textOverflow ?? undefined,
+      lineHeight: props.lineHeight ?? 0,
+      maxLines: props.maxLines ?? 0,
+      maxLinesSuffix: props.maxLinesSuffix ?? '',
+      textOverflow: props.textOverflow ?? 'ellipsis',
+      verticalAlign: props.verticalAlign ?? 'middle',
+      textBaseline: props.textBaseline ?? 'alphabetic',
       debug: props.debug ?? {},
     };
 

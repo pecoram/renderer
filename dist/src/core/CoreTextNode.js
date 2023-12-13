@@ -53,6 +53,8 @@ export class CoreTextNode extends CoreNode {
             maxLines: props.maxLines,
             maxLinesSuffix: props.maxLinesSuffix,
             textOverflow: props.textOverflow,
+            verticalAlign: props.verticalAlign,
+            textBaseline: props.textBaseline,
         }, undefined);
         this.textRenderer = resolvedTextRenderer;
         this.trState = textRendererState;
@@ -234,6 +236,22 @@ export class CoreTextNode extends CoreNode {
     set textOverflow(value) {
         if (this.textRenderer.set.textOverflow) {
             this.textRenderer.set.textOverflow(this.trState, value);
+        }
+    }
+    get verticalAlign() {
+      return this.trState.props.verticalAlign;
+    }
+    set verticalAlign(value) {
+        if (this.textRenderer.set.verticalAlign) {
+            this.textRenderer.set.verticalAlign(this.trState, value);
+        }
+    }
+    get textBaseline() {
+      return this.trState.props.textBaseline;
+    }
+    set textBaseline(value) {
+        if (this.textRenderer.set.textBaseline) {
+            this.textRenderer.set.textBaseline(this.trState, value);
         }
     }
     get debug() {

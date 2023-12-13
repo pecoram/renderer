@@ -56,6 +56,8 @@ export declare class CoreTextNode extends CoreNode implements ICoreTextNode {
     set maxLinesSuffix(value: CoreTextNodeProps['maxLinesSuffix']);
     get textOverflow(): CoreTextNodeProps['textOverflow'];
     set textOverflow(value: CoreTextNodeProps['textOverflow']);
+    get verticalAlign(): CoreTextNodeProps['verticalAlign'];
+    set textBaseline(value: CoreTextNodeProps['textBaseline']);
     get debug(): CoreTextNodeProps['debug'];
     set debug(value: CoreTextNodeProps['debug']);
     update(delta: number): void;

@@ -139,6 +139,14 @@ export class CanvasTextRenderer extends TextRenderer {
                 state.props.textOverflow = value;
                 this.markForReload(state);
             },
+            verticalAlign: (state, value) => {
+                state.props.verticalAlign = value;
+                this.markForReload(state);
+            },
+            textBaseline: (state, value) => {
+                state.props.textBaseline = value;
+                this.markForReload(state);
+            },
             // debug: (state, value) => {
             //   state.props.debug = value;
             // },
@@ -234,6 +242,8 @@ export class CanvasTextRenderer extends TextRenderer {
                 maxLines: state.props.maxLines,
                 maxLinesSuffix: state.props.maxLinesSuffix,
                 textOverflow: state.props.textOverflow,
+                varticalAlign: state.props.varticalAlign,
+                textBaseline: state.props.textBaseline,
             };
             const renderInfoCalculateTime = performance.now();
             state.renderInfo = state.lightning2TextRenderer.calculateRenderInfo();

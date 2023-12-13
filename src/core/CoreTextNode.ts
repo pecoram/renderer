@@ -84,6 +84,8 @@ export class CoreTextNode extends CoreNode implements ICoreTextNode {
           maxLines: props.maxLines,
           maxLinesSuffix: props.maxLinesSuffix,
           textOverflow: props.textOverflow,
+          verticalAlign: props.verticalAlign,
+          textBaseline: props.textBaseline,
         },
         undefined,
       );
@@ -311,6 +313,24 @@ export class CoreTextNode extends CoreNode implements ICoreTextNode {
   set textOverflow(value: CoreTextNodeProps['textOverflow']) {
     if (this.textRenderer.set.textOverflow) {
       this.textRenderer.set.textOverflow(this.trState, value);
+    }
+  }
+  get verticalAlign(): CoreTextNodeProps['verticalAlign'] {
+    return this.trState.props.verticalAlign;
+  }
+
+  set verticalAlign(value: CoreTextNodeProps['verticalAlign']) {
+    if (this.textRenderer.set.verticalAlign) {
+      this.textRenderer.set.verticalAlign(this.trState, value);
+    }
+  }
+  get textBaseline(): CoreTextNodeProps['textBaseline'] {
+    return this.trState.props.textBaseline;
+  }
+
+  set textBaseline(value: CoreTextNodeProps['textBaseline']) {
+    if (this.textRenderer.set.textBaseline) {
+      this.textRenderer.set.textBaseline(this.trState, value);
     }
   }
 

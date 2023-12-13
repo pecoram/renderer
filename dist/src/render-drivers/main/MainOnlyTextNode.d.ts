@@ -40,6 +40,10 @@ export declare class MainOnlyTextNode extends MainOnlyNode implements ITextNode 
     set maxLinesSuffix(value: ITextNode['maxLinesSuffix']);
     get textOverflow(): ITextNode['textOverflow'];
     set textOverflow(value: ITextNode['textOverflow']);
+    get verticalAlign(): ITextNode['verticalAlign'];
+    set verticalAlign(value: ITextNode['verticalAlign']);
+    get textBaseline(): ITextNode['textBaseline'];
+    set textBaseline(value: ITextNode['textBaseline']);
     get debug(): ITextNode['debug'];
     set debug(value: ITextNode['debug']);
 }
