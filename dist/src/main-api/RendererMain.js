@@ -175,9 +175,9 @@ export class RendererMain {
             lineHeight: props.lineHeight ?? 0,
             maxLines: props.maxLines ?? 0,
             maxLinesSuffix: props.maxLinesSuffix ?? '',
-            textOverflow: props.textOverflow ?? undefined,
+            textOverflow: props.textOverflow ?? 'ellipsis',
             verticalAlign: props.verticalAlign ?? 'middle',
-            tectBaseline: props.tectBaseline ?? 'alphabetic',
+            textBaseline: props.textBaseline ?? 'alphabetic',
             debug: props.debug ?? {},
         };
         return this.driver.createTextNode(data);

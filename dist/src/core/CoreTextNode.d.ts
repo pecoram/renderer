@@ -57,6 +57,8 @@ export declare class CoreTextNode extends CoreNode implements ICoreTextNode {
     get textOverflow(): CoreTextNodeProps['textOverflow'];
     set textOverflow(value: CoreTextNodeProps['textOverflow']);
     get verticalAlign(): CoreTextNodeProps['verticalAlign'];
+    set verticalAlign(value: CoreTextNodeProps['verticalAlign']);
+    get textBaseline(): CoreTextNodeProps['textBaseline'];
     set textBaseline(value: CoreTextNodeProps['textBaseline']);
     get debug(): CoreTextNodeProps['debug'];
     set debug(value: CoreTextNodeProps['debug']);

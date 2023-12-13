@@ -3,7 +3,7 @@ import type { Stage } from '../../Stage.js';
 import type { Matrix3d } from '../../lib/Matrix3d.js';
 import type { Rect } from '../../lib/utils.js';
 import type { TrFontFace, TrFontFaceDescriptors } from '../font-face-types/TrFontFace.js';
-import { TextBaseline, TextOverflow, TextVerticalAlign } from './LightningTextTextureRenderer.js';
+import type { TextBaseline, TextOverflow, TextVerticalAlign } from './LightningTextTextureRenderer.js';
 /**
  * Augmentable map of text renderer type IDs to text renderer types.
  *

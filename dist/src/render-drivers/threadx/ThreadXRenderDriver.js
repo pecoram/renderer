@@ -165,6 +165,12 @@ export class ThreadXRenderDriver {
             letterSpacing: props.letterSpacing,
             offsetY: props.offsetY,
             textAlign: props.textAlign,
+            lineHeight: props.lineHeight,
+            maxLines: props.maxLines,
+            maxLinesSuffix: props.maxLinesSuffix,
+            textBaseline: props.textBaseline,
+            textOverflow: props.textOverflow,
+            verticalAlign: props.verticalAlign,
             scrollable: props.scrollable,
             scrollY: props.scrollY,
         });

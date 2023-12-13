@@ -31,4 +31,16 @@ export declare class TextNodeStruct extends NodeStruct implements TextNodeStruct
     set offsetY(value: TextNodeStructWritableProps['offsetY']);
     get letterSpacing(): TextNodeStructWritableProps['letterSpacing'];
     set letterSpacing(value: TextNodeStructWritableProps['letterSpacing']);
+    get lineHeight(): TextNodeStructWritableProps['lineHeight'];
+    set lineHeight(value: TextNodeStructWritableProps['lineHeight']);
+    get maxLines(): TextNodeStructWritableProps['maxLines'];
+    set maxLines(value: TextNodeStructWritableProps['maxLines']);
+    get maxLinesSuffix(): TextNodeStructWritableProps['maxLinesSuffix'];
+    set maxLinesSuffix(value: TextNodeStructWritableProps['maxLinesSuffix']);
+    get textOverflow(): TextNodeStructWritableProps['textOverflow'];
+    set textOverflow(value: TextNodeStructWritableProps['textOverflow']);
+    get verticalAlign(): TextNodeStructWritableProps['verticalAlign'];
+    set verticalAlign(value: TextNodeStructWritableProps['verticalAlign']);
+    get textBaseline(): TextNodeStructWritableProps['textBaseline'];
+    set textBaseline(value: TextNodeStructWritableProps['textBaseline']);
 }

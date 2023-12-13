@@ -15,6 +15,12 @@ export declare class ThreadXRendererTextNode extends ThreadXRendererNode {
     fontStyle: TextNodeStructWritableProps['fontStyle'];
     contain: TextNodeStructWritableProps['contain'];
     letterSpacing: TextNodeStructWritableProps['letterSpacing'];
+    lineHeight: TextNodeStructWritableProps['lineHeight'];
+    maxLines: TextNodeStructWritableProps['maxLines'];
+    maxLinesSuffix: TextNodeStructWritableProps['maxLinesSuffix'];
+    textOverflow: TextNodeStructWritableProps['textOverflow'];
+    verticalAlign: TextNodeStructWritableProps['verticalAlign'];
+    textBaseline: TextNodeStructWritableProps['textBaseline'];
     offsetY: TextNodeStructWritableProps['offsetY'];
     textAlign: TextNodeStructWritableProps['textAlign'];
     scrollable: TextNodeStructWritableProps['scrollable'];

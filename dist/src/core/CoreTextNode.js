@@ -239,7 +239,7 @@ export class CoreTextNode extends CoreNode {
         }
     }
     get verticalAlign() {
-      return this.trState.props.verticalAlign;
+        return this.trState.props.verticalAlign;
     }
     set verticalAlign(value) {
         if (this.textRenderer.set.verticalAlign) {
@@ -247,7 +247,7 @@ export class CoreTextNode extends CoreNode {
         }
     }
     get textBaseline() {
-      return this.trState.props.textBaseline;
+        return this.trState.props.textBaseline;
     }
     set textBaseline(value) {
         if (this.textRenderer.set.textBaseline) {

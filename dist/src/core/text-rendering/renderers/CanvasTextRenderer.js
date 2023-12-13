@@ -242,7 +242,7 @@ export class CanvasTextRenderer extends TextRenderer {
                 maxLines: state.props.maxLines,
                 maxLinesSuffix: state.props.maxLinesSuffix,
                 textOverflow: state.props.textOverflow,
-                varticalAlign: state.props.varticalAlign,
+                verticalAlign: state.props.verticalAlign,
                 textBaseline: state.props.textBaseline,
             };
             const renderInfoCalculateTime = performance.now();

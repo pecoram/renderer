@@ -34,6 +34,12 @@ export class ThreadXMainTextNode extends ThreadXMainNode {
             scrollable: sharedNodeStruct.scrollable,
             scrollY: sharedNodeStruct.scrollY,
             textAlign: sharedNodeStruct.textAlign,
+            lineHeight: sharedNodeStruct.lineHeight,
+            maxLines: sharedNodeStruct.maxLines,
+            maxLinesSuffix: sharedNodeStruct.textAlign,
+            textOverflow: sharedNodeStruct.textAlign,
+            verticalAlign: sharedNodeStruct.verticalAlign,
+            textBaseline: sharedNodeStruct.textBaseline,
         });
     }
     get debug() {

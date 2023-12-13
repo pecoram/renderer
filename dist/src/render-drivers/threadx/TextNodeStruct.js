@@ -104,6 +104,42 @@ export class TextNodeStruct extends NodeStruct {
     set letterSpacing(value) {
         // Decorator will handle this
     }
+    get lineHeight() {
+        return 0;
+    }
+    set lineHeight(value) {
+        // Decorator will handle this
+    }
+    get maxLines() {
+        return 0;
+    }
+    set maxLines(value) {
+        // Decorator will handle this
+    }
+    get maxLinesSuffix() {
+        return '';
+    }
+    set maxLinesSuffix(value) {
+        // Decorator will handle this
+    }
+    get textOverflow() {
+        return 'ellipsis';
+    }
+    set textOverflow(value) {
+        // Decorator will handle this
+    }
+    get verticalAlign() {
+        return 'middle';
+    }
+    set verticalAlign(value) {
+        // Decorator will handle this
+    }
+    get textBaseline() {
+        return 'alphabetic';
+    }
+    set textBaseline(value) {
+        // Decorator will handle this
+    }
 }
 __decorate([
     structProp('string')
@@ -153,4 +189,22 @@ __decorate([
 __decorate([
     structProp('number')
 ], TextNodeStruct.prototype, "letterSpacing", null);
+__decorate([
+    structProp('number')
+], TextNodeStruct.prototype, "lineHeight", null);
+__decorate([
+    structProp('number')
+], TextNodeStruct.prototype, "maxLines", null);
+__decorate([
+    structProp('string')
+], TextNodeStruct.prototype, "maxLinesSuffix", null);
+__decorate([
+    structProp('string')
+], TextNodeStruct.prototype, "textOverflow", null);
+__decorate([
+    structProp('string')
+], TextNodeStruct.prototype, "verticalAlign", null);
+__decorate([
+    structProp('number')
+], TextNodeStruct.prototype, "textBaseline", null);
 //# sourceMappingURL=TextNodeStruct.js.map

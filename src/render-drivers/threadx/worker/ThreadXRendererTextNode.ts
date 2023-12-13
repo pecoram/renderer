@@ -89,6 +89,12 @@ export class ThreadXRendererTextNode extends ThreadXRendererNode {
         letterSpacing: sharedNodeStruct.letterSpacing,
         offsetY: sharedNodeStruct.offsetY,
         textAlign: sharedNodeStruct.textAlign,
+        lineHeight: sharedNodeStruct.lineHeight,
+        maxLines: sharedNodeStruct.maxLines,
+        maxLinesSuffix: sharedNodeStruct.maxLinesSuffix,
+        textOverflow: sharedNodeStruct.textOverflow,
+        verticalAlign: sharedNodeStruct.verticalAlign,
+        textBaseline: sharedNodeStruct.textBaseline,
         scrollable: sharedNodeStruct.scrollable,
         scrollY: sharedNodeStruct.scrollY,
         debug: {},
@@ -105,6 +111,12 @@ export class ThreadXRendererTextNode extends ThreadXRendererNode {
         letterSpacing: sharedNodeStruct.letterSpacing,
         offsetY: sharedNodeStruct.offsetY,
         textAlign: sharedNodeStruct.textAlign,
+        lineHeight: sharedNodeStruct.lineHeight,
+        maxLines: sharedNodeStruct.maxLines,
+        maxLinesSuffix: sharedNodeStruct.maxLinesSuffix,
+        textOverflow: sharedNodeStruct.textOverflow,
+        verticalAlign: sharedNodeStruct.verticalAlign,
+        textBaseline: sharedNodeStruct.textBaseline,
         scrollable: sharedNodeStruct.scrollable,
         scrollY: sharedNodeStruct.scrollY,
       } satisfies Omit<
@@ -127,6 +139,12 @@ export class ThreadXRendererTextNode extends ThreadXRendererNode {
   declare fontStyle: TextNodeStructWritableProps['fontStyle'];
   declare contain: TextNodeStructWritableProps['contain'];
   declare letterSpacing: TextNodeStructWritableProps['letterSpacing'];
+  declare lineHeight: TextNodeStructWritableProps['lineHeight'];
+  declare maxLines: TextNodeStructWritableProps['maxLines'];
+  declare maxLinesSuffix: TextNodeStructWritableProps['maxLinesSuffix'];
+  declare textOverflow: TextNodeStructWritableProps['textOverflow'];
+  declare verticalAlign: TextNodeStructWritableProps['verticalAlign'];
+  declare textBaseline: TextNodeStructWritableProps['textBaseline'];
   declare offsetY: TextNodeStructWritableProps['offsetY'];
   declare textAlign: TextNodeStructWritableProps['textAlign'];
   declare scrollable: TextNodeStructWritableProps['scrollable'];

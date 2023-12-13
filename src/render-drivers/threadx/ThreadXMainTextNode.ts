@@ -44,6 +44,12 @@ export class ThreadXMainTextNode extends ThreadXMainNode implements ITextNode {
       scrollable: sharedNodeStruct.scrollable,
       scrollY: sharedNodeStruct.scrollY,
       textAlign: sharedNodeStruct.textAlign,
+      lineHeight: sharedNodeStruct.lineHeight,
+      maxLines: sharedNodeStruct.maxLines,
+      maxLinesSuffix: sharedNodeStruct.textAlign,
+      textOverflow: sharedNodeStruct.textAlign,
+      verticalAlign: sharedNodeStruct.verticalAlign,
+      textBaseline: sharedNodeStruct.textBaseline,
     } satisfies Omit<TextNodeStructWritableProps, keyof NodeStructWritableProps>);
   }
 
@@ -52,6 +58,7 @@ export class ThreadXMainTextNode extends ThreadXMainNode implements ITextNode {
   declare fontSize: ITextNode['fontSize'];
   declare fontFamily: ITextNode['fontFamily'];
   declare fontStretch: ITextNode['fontStretch'];
+  declare letterSpacing: ITextNode['letterSpacing'];
   declare fontStyle: ITextNode['fontStyle'];
   declare fontWeight: ITextNode['fontWeight'];
   declare textAlign: ITextNode['textAlign'];
@@ -59,7 +66,12 @@ export class ThreadXMainTextNode extends ThreadXMainNode implements ITextNode {
   declare scrollable: ITextNode['scrollable'];
   declare scrollY: ITextNode['scrollY'];
   declare offsetY: ITextNode['offsetY'];
-  declare letterSpacing: ITextNode['letterSpacing'];
+  declare lineHeight: ITextNode['lineHeight'];
+  declare maxLines: ITextNode['maxLines'];
+  declare maxLinesSuffix: ITextNode['maxLinesSuffix'];
+  declare textOverflow: ITextNode['textOverflow'];
+  declare verticalAlign: ITextNode['verticalAlign'];
+  declare textBaseline: ITextNode['textBaseline'];
 
   get debug(): ITextNode['debug'] {
     return this._debug;

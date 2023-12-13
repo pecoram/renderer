@@ -10,6 +10,7 @@ export declare class ThreadXMainTextNode extends ThreadXMainNode implements ITex
     fontSize: ITextNode['fontSize'];
     fontFamily: ITextNode['fontFamily'];
     fontStretch: ITextNode['fontStretch'];
+    letterSpacing: ITextNode['letterSpacing'];
     fontStyle: ITextNode['fontStyle'];
     fontWeight: ITextNode['fontWeight'];
     textAlign: ITextNode['textAlign'];
@@ -17,7 +18,12 @@ export declare class ThreadXMainTextNode extends ThreadXMainNode implements ITex
     scrollable: ITextNode['scrollable'];
     scrollY: ITextNode['scrollY'];
     offsetY: ITextNode['offsetY'];
-    letterSpacing: ITextNode['letterSpacing'];
+    lineHeight: ITextNode['lineHeight'];
+    maxLines: ITextNode['maxLines'];
+    maxLinesSuffix: ITextNode['maxLinesSuffix'];
+    textOverflow: ITextNode['textOverflow'];
+    verticalAlign: ITextNode['verticalAlign'];
+    textBaseline: ITextNode['textBaseline'];
     get debug(): ITextNode['debug'];
     set debug(debug: ITextNode['debug']);
 }
