@@ -1,6 +1,6 @@
 {
-  "name": "@lightningjs/renderer",
-  "version": "0.5.2",
+  "name": "fork-lightningjs-renderer",
+  "version": "0.5.3",
   "description": "Lightning 3 Renderer",
   "type": "module",
   "main": "./dist/exports/index.js",
@@ -78,7 +78,6 @@
   ],
   "packageManager": "pnpm@8.9.2",
   "engines": {
-    "npm": "please-use-pnpm",
     "pnpm": ">= 8.9.2"
   }
 }
