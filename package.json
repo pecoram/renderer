@@ -1,5 +1,5 @@
 {
-  "name": "fork-lightningjs-renderer",
+  "name": "@lightningjs/renderer",
   "version": "0.5.3",
   "description": "Lightning 3 Renderer",
   "type": "module",
