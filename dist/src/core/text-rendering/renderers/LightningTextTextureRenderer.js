@@ -458,7 +458,7 @@ export class LightningTextTextureRenderer {
             lineHeight: null,
             textBaseline: 'alphabetic',
             textAlign: 'left',
-            verticalAlign: 'top',
+            verticalAlign: 'middle',
             offsetY: null,
             maxLines: 0,
             maxLinesSuffix: '..',

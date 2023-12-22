@@ -205,6 +205,6 @@ __decorate([
     structProp('string')
 ], TextNodeStruct.prototype, "verticalAlign", null);
 __decorate([
-    structProp('number')
+    structProp('string')
 ], TextNodeStruct.prototype, "textBaseline", null);
 //# sourceMappingURL=TextNodeStruct.js.map
