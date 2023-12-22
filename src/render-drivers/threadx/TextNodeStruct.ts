@@ -209,7 +209,7 @@ export class TextNodeStruct
     // Decorator will handle this
   }
 
-  @structProp('number')
+  @structProp('string')
   get textBaseline(): TextNodeStructWritableProps['textBaseline'] {
     return 'alphabetic';
   }
