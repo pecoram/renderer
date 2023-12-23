@@ -23,7 +23,6 @@
     "lint:eslint": "eslint .",
     "lint:fix:eslint": "eslint --fix .",
     "typedoc": "typedoc",
-    "prepare": "husky install",
     "prepack": "pnpm run build"
   },
   "repository": {
@@ -76,8 +75,7 @@
     "NOTICE",
     "README.md"
   ],
-  "packageManager": "pnpm@8.9.2",
   "engines": {
-    "pnpm": ">= 8.9.2"
+    "pnpm": ">= 8.0.0"
   }
 }

@@ -12,7 +12,6 @@
   },
   "files": [
     "./.eslintrc.cjs",
-    "./examples/vite.config.ts",
     "./typedoc.config.cjs"
   ]
 }
