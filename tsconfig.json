@@ -20,6 +20,7 @@
     "resolveJsonModule": true,
     "verbatimModuleSyntax": true,
     "composite": true,
+    "skipLibCheck": true
   },
   "files": [],
   "references": [

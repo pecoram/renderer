@@ -234,6 +234,32 @@ export default async function test({ renderer, testRoot }: ExampleSettings) {
     parent: testRoot,
   });
 
+  const t8 = renderer.createNode({
+    x: 2000,
+    y: 100,
+    width: 152,
+    height: 152,
+    color: 0x00ff00ff,
+    shader: renderer.createShader('DynamicShader', {
+      effects: [
+        {
+          type: 'border',
+          props: {
+            width: 6,
+            color: 0xfafafaff,
+          },
+        },
+        {
+          type: 'radius',
+          props: {
+            radius: 152 / 2,
+          },
+        },
+      ],
+    }),
+    parent: testRoot,
+  });
+
   /*
    * End: Sprite Map Demo
    */

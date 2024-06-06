@@ -72,8 +72,11 @@ export class RoundedRectangle extends WebGlCoreShader {
 
   override bindTextures(textures: WebGlCoreCtxTexture[]) {
     const { glw } = this;
-    glw.activeTexture(0);
-    glw.bindTexture(textures[0]!.ctxTexture);
+    const texture = textures?.[0]?.ctxTexture;
+    if (texture) {
+      glw.activeTexture(0);
+      glw.bindTexture(texture);
+    }
   }
 
   protected override bindProps(props: Required<RoundedRectangleProps>): void {

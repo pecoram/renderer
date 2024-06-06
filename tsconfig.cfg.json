@@ -9,6 +9,7 @@
     "resolveJsonModule": true,
     "allowJs": true,
     "esModuleInterop": true,
+    "skipLibCheck": true
   },
   "files": [
     "./.eslintrc.cjs",

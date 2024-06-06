@@ -83,6 +83,9 @@ export class RadiusEffect extends ShaderEffect {
     },
   };
 
+  /**
+   * @see: from http://www.iquilezles.org/www/articles/distfunctions/distfunctions.htm
+   */
   static override methods: Record<string, string> = {
     fillMask: `
       float function(float dist) {
@@ -90,10 +93,15 @@ export class RadiusEffect extends ShaderEffect {
       }
     `,
     boxDist: `
+      float roundedBoxSDF(vec2 centerPosition, vec2 size, float radius){
+          return length(max(abs(centerPosition) - size + radius, 0.0)) - radius;
+      }
+
       float function(vec2 p, vec2 size, float radius) {
-        size -= vec2(radius);
-        vec2 d = abs(p) - size;
-        return min(max(d.x, d.y), 0.0) + length(max(d, 0.0)) - radius + 1.0;
+         size -= vec2(radius);
+         vec2 d = abs(p) - size;
+         float dist = min(max(d.x, d.y), 0.0) + length(max(d, 0.0)) - radius;
+         return dist;
       }
     `,
   };

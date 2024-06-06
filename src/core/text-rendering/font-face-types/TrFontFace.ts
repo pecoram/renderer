@@ -173,7 +173,7 @@ export class TrFontFace extends EventEmitter {
    */
   public static convertToCssFontFaceDescriptors(
     descriptors: TrFontFaceDescriptors,
-  ): FontFaceDescriptors {
+  ): FontFaceDescriptors & { variant?: string | undefined } {
     return {
       style: descriptors.style,
       weight:

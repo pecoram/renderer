@@ -257,7 +257,7 @@ export class DynamicShader extends WebGlCoreShader {
         methods[cm] = fxMethod.replace('function', cm);
         remap.push({ m, cm });
       }
-
+      console.log('@@@@@@@@ fxProps:> ', fxProps);
       let onShaderMask =
         fxClass.onShaderMask instanceof Function
           ? fxClass.onShaderMask(fxProps)
@@ -335,7 +335,7 @@ export class DynamicShader extends WebGlCoreShader {
       const pm =
         current.passParameters.length > 0 ? `, ${current.passParameters}` : '';
       const currentClass = effectContructors[current.name as keyof EffectMap]!;
-
+      console.log(`@@@@ pm :> `, pm);
       if (currentClass.onShaderMask) {
         drawEffects += `
         shaderMask = fx_${current.target}_onShaderMask(shaderMask ${pm});
@@ -360,6 +360,10 @@ export class DynamicShader extends WebGlCoreShader {
         `;
       }
     }
+    console.log('@@@@@ effectMethods');
+    console.log(effectMethods);
+    console.log('@@@@@ drawEffects');
+    console.log(drawEffects);
 
     return {
       effects,

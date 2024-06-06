@@ -49,7 +49,9 @@ export class WebTrFontFace extends TrFontFace {
     const determinedDescriptors = this.descriptors;
 
     // Convert TrFontFaceDescriptors to CSS FontFaceDescriptors
-    const cssDescriptors: FontFaceDescriptors = {
+    const cssDescriptors: FontFaceDescriptors & {
+      variant?: string | undefined;
+    } = {
       style: determinedDescriptors.style,
       weight:
         typeof determinedDescriptors.weight === 'number'
