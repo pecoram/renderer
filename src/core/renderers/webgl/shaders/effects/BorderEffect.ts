@@ -39,6 +39,14 @@ export interface BorderEffectProps extends DefaultEffectProps {
    * @default 0xffffffff
    */
   color?: number;
+  /**
+   * Border outset
+   * When true, the border is rendered outside the element's rect
+   * so that the inner edge aligns with the original bounds.
+   *
+   * @default false
+   */
+  outset?: boolean;
 }
 
 /**
@@ -58,6 +66,7 @@ export class BorderEffect extends ShaderEffect {
     return {
       width: props.width ?? 10,
       color: props.color ?? 0xffffffff,
+      outset: props.outset ?? false,
     };
   }
 
